@@ -1,0 +1,237 @@
+.edit-package {
+    font-family: 'poppins', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    background-color: #f0f0ff;
+    border-radius: 5%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    gap: 40px;
+}
+
+.left-side {
+    flex: 2;
+}
+
+.right-side {
+    flex: 1;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+.activity-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.input-type{
+    font-family: 'poppins';
+}
+
+.activity-input input {
+    flex-grow: 1;
+}
+
+.add-activity-btn,
+.remove-day-btn {
+    background-color: white;
+    color: #6c5ce7;
+    border: 2px solid #6c5ce7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.remove-btn,
+.remove-day-btn {
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+.image-upload-container {
+    background-color: white;
+    border: 2px dashed #6c5ce7;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-upload-container p {
+    color: #6c5ce7;
+    margin-bottom: 10px;
+}
+
+.image-upload-container input[type="file"] {
+    display: none;
+}
+
+.image-upload-container img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.add-day-btn,
+.save-changes-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.add-day-btn:hover,
+.save-changes-btn:hover {
+    background-color: #5b4bc7;
+}
+.AddActivity {
+    margin: 20px;
+    width: 150px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 0, 83);
+    border-radius: 12px;
+    border: 1px solid #6646f3;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.AddActivity:hover {
+    background-color: #6646f3; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+.Removeday{
+    margin: 20px;
+    margin-top: -30px;
+    width: 150px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 0, 83);
+    border-radius: 12px;
+    border: 1px solid #6646f3;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+.Removeday:hover{
+    background-color: #6646f3; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+.addDay{
+        position: relative;
+        text-align: center;
+        margin: 20px;
+        width: 250px;
+        padding: 2px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #6646f3;
+        color: rgb(255, 255, 255);
+        border-radius: 12px;
+        border: 0cap;
+        /* border: 1px solid #6646f3; */
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+    }
+
+.addDay:hover{
+    background-color: #1e0e67; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+.submit{
+    position: relative;
+    margin: 20px;
+    margin-top: 1px;
+    width: 250px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #6646f3;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    border: 0cap;
+    /* border: 1px solid #6646f3; */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+.submit:hover{
+ background-color: #1e0e67; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height to center the loading indicator */
+}
+
+.loading-circle {
+    border: 4px solid #f3f3f3; /* Light gray border */
+    border-top: 4px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%; /* Rounded edges to form a circle */
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Rotation animation */
+    margin-bottom: 20px; /* Space between the circle and the text */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-message {
+    font-size: 1.5rem; /* Larger text size */
+    color: #555; /* Gray color */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+}

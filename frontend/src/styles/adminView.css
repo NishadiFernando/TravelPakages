@@ -1,0 +1,143 @@
+.view-packages {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.allpkg {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(40, 40, 40);
+}
+
+.reportbtn,
+.viewbtn {
+  background-color: #1c39bb;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.viewbtn:hover {
+  background-color: #3f60f2;
+}
+.reportbtn {
+  margin-left: 15px;
+  padding-left: 5px;
+}
+.printer {
+  color: white;
+  padding-left: 15px;
+}
+.reportdiv,
+.newpkgdiv {
+  display: inline-flex;
+  align-items: center;
+  background-color: #1c39bb;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.reportdiv {
+  margin-left: 5px;
+}
+.reportdiv .printer,
+.newpkgdiv .printer {
+  color: white;
+  padding-left: 10px;
+}
+
+.reportdiv .reportbtn,
+.newpkgdiv .reportbtn {
+  margin-left: 5px;
+  padding: 10px;
+}
+
+.packages-table {
+  width: 170vh;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.packages-table th {
+  background-color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-family: "poppins_regular", sans-serif;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  font-weight: 600;
+  color: #6f6f6f;
+}
+
+.packages-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.packages-table .even-row {
+  background-color: #f2f2f2;
+}
+
+.packages-table .odd-row {
+  background-color: white;
+}
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+}
+.searchInput {
+  width: 100vh;
+  border: none;
+  font-family: "poppins_regular";
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: none; /* Optional */
+}
+.searchContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: white;
+  align-items: center;
+}
+
+.searchIcon {
+  position: relative;
+  left: 10px;
+  top: 50%;
+  padding-right: 10px;
+  transform: translateY(-15%);
+  color: #a2a2a2;
+}
+.deletebtn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.deletebtn:hover {
+  background-color: #ff1a1a;
+}

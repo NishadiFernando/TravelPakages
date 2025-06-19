@@ -1,0 +1,274 @@
+body {
+    padding: 10%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 223, 255);
+}
+
+.maindiv {
+    border: 1px solid #f3f3f3;
+    background-color: rgb(255, 255, 255);
+    padding: 80px;
+    padding-top: 50px;
+    width: fit-content;
+    border-radius: 5%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-column, .right-column {
+    flex: 1; /* Both columns will take up equal space */
+    margin-right: 60px; /* Adds space between columns */
+}
+
+.right-column {
+    margin-right: 0; /* Remove margin on the right column */
+}
+
+.image-upload {
+    border: 2px dashed #6c63ff; /* Dashed border for the box */
+    border-radius: 10px;
+    padding: 20px;
+    width: 50vh;
+    height: 43vh;
+    text-align: center;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    position: relative; /* Position relative for drag-and-drop functionality */
+    cursor: pointer; /* Change cursor to pointer */
+    overflow: hidden; /* Hide any overflow from the image */
+}
+
+.image-upload img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 5px;
+}
+
+.image-upload.drag-over {
+    border-color: #6646f3; /* Change border color on drag-over */
+    background-color: #e1e1e1;
+}
+
+.image-upload input[type="file"] {
+    display: none; /* Hide the default file input */
+    max-width: 200px;
+}
+
+.image-upload .upload-text {
+    font-family: 'Poppins', sans-serif;
+    color: #464894;
+    font-size: 1rem;
+}
+
+.titleclass {
+    font-family: poppins_bold;
+    color: rgb(40, 40, 40);
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.packagenamediv {
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+    color: #464894;
+    margin-bottom: 20px;
+}
+
+.days {
+    font-family: poppins_semi;
+    font-size: 1rem;
+    position: relative;
+    font-size: large;
+    color: rgb(3, 3, 88);
+}
+
+.packagenamediv label {
+    margin-bottom: 5px; 
+}
+
+.input {
+    border: 1px solid #d3c9ff; 
+    border-radius: 8px; 
+    height: 40px; 
+    padding: 8px; 
+    box-sizing: border-box; 
+}
+
+.input::placeholder {
+    color: #8d8ebb; /* Change this to your desired placeholder text color */
+    font-family: 'poppins_light'; /* Change this to your desired font family */
+    font-size: 14px; /* Optional: Adjust font size as needed */
+}
+
+.AddActivity {
+    margin: 20px;
+    padding: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 0, 83);
+    border-radius: 12px;
+    border: 1px solid #6646f3;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.AddActivity:hover {
+    background-color: #6646f3; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+
+.RemoveActivity{
+    margin: 20px;
+    width: 300px;
+    margin-top: -1px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 0, 83);
+    border-radius: 12px;
+    border: 1px solid #6646f3;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+.RemoveActivity:hover{
+    background-color: #6646f3; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    margin-top: 20px; /* Space above the container */
+}
+
+.button-container button {
+    margin: 10px; /* Space between buttons */
+}
+
+.addDay {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #6646f3;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    border: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.addDay:hover {
+    background-color: #1e0e67; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+
+.submit {
+    position: relative;
+    margin: 20px;
+    margin-top: 1px;
+    width: 250px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #6646f3;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+.submit:hover {
+    background-color: #1e0e67; 
+    color: #ffffff; 
+    transform: scale(1.05); 
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsive adjustments for tablets */
+@media screen and (max-width: 768px) {
+    .form-container {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .left-column, .right-column {
+        margin-right: 0;
+        width: 100%; /* Ensure columns take full width */
+    }
+
+    .maindiv {
+        padding: 40px; /* Reduce padding for smaller screens */
+    }
+
+    .image-upload {
+        width: 100%; /* Full width image upload box */
+        height: auto; /* Adjust height automatically */
+    }
+}
+
+/* Responsive adjustments for mobile phones */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 5%;
+        padding-top: 5%;
+    }
+
+    .maindiv {
+        padding: 20px;
+    }
+
+    .titleclass {
+        font-size: 1.5rem;
+    }
+
+    .packagenamediv {
+        margin-bottom: 10px;
+    }
+
+    .input {
+        height: 35px; /* Adjust input height */
+        padding: 5px;
+    }
+
+    .AddActivity, .RemoveActivity, .addDay, .submit {
+        width: 100%; /* Full width buttons */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .image-upload {
+        padding: 10px;
+    }
+
+    .image-upload img {
+        border-radius: 5%;
+    }
+}

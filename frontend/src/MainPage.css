@@ -1,0 +1,200 @@
+/* MainPage CSS */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-page {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .navbar {
+    margin-top: 10px;
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dashboard Section */
+  .dashboard {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard h2 {
+    color: #007bff;
+  }
+  
+  .request-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .request-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .request-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .request-card p {
+    margin: 8px 0;
+    color: #555;
+  }
+  
+  /* Profile Image Styling */
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons */
+  .accept-btn,
+  .decline-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accept-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .accept-btn:hover {
+    background-color: #218838;
+  }
+  
+  .decline-btn {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .decline-btn:hover {
+    background-color: #c82333;
+  }
+  
+  span.accepted {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  span.declined {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  span.pending {
+    color: #ffc107;
+    font-weight: bold;
+  }
+  
+  .button-group {
+    margin-top: 10px;
+  }
+  
+  /* Schedule Appointment Section */
+  .schedule-appointment {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .schedule-appointment h3 {
+    color: #333;
+    font-size: 1.5rem;
+  }
+  
+  .schedule-btn {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .schedule-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Navigate button styling */
+  .navigate-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition:
+    background-color 0.3s ease;
+}
+
+.navigate-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007bff;
+  color: white;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+}
+  

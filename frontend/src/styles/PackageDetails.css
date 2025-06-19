@@ -1,0 +1,257 @@
+/* PackageDetails.css */
+
+.package-details-container {
+  width: 100%;
+  height: 10vh;
+  font-family: "poppins";
+}
+
+/* Cover Image Section */
+.cover-image-section {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensures text color is white for visibility */
+  text-align: center;
+  padding: 20px; /* Adds padding around text */
+}
+.pkg-title {
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "poppins";
+}
+/* Package Content */
+.package-content {
+  width: 70%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Day Sections */
+.day-section {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.day-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.day-title {
+  font-size: 2.5rem;
+  color: #f9f9f9;
+  font-family: "poppins";
+  margin-bottom: 25px;
+  line-height: 7vh;
+}
+
+.day-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.day-content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.day-image-container {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  flex: 1;
+  max-width: 50%;
+  background-size: cover;
+}
+
+.day-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.day-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding-left: 20px;
+  padding-right: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.day-price {
+  font-size: 1.2rem;
+  margin-top: 0px; /* Space between title and price */
+  font-weight: normal;
+  font-family: "poppins";
+  color: #e84a00;
+  background-color: #ffffff;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 20px;
+}
+
+.day-number {
+  font-size: 1.5rem;
+  margin-bottom: 5px; /* Adjust space between number and title */
+  border: 1px solid white; /* Adjust the thickness of the border as needed */
+  padding: 10px; /* Optional: Adds some space between the text and the border */
+  border-radius: 4px; /* Optional: Adds rounded corners to the border */
+  color: white;
+  width: fit-content;
+}
+
+.day-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.day-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.activities-section h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.activities-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.activities-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.check-icon {
+  color: #4caf50;
+  margin-right: 10px;
+}
+
+.edit-button {
+  position: relative;
+  display: block;
+  width: 200px;
+  margin: 40px auto;
+  background-color: #1c39bb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-button:hover {
+  background-color: #2f0dc8;
+}
+.btndiv {
+  padding-bottom: 20px;
+}
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height to center the loading indicator */
+}
+
+.loading-circle {
+  border: 4px solid #f3f3f3; /* Light gray border */
+  border-top: 4px solid #3498db; /* Blue color for the spinner */
+  border-radius: 50%; /* Rounded edges to form a circle */
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite; /* Rotation animation */
+  margin-bottom: 20px; /* Space between the circle and the text */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-message {
+  font-size: 1.5rem; /* Larger text size */
+  color: #555; /* Gray color */
+  text-align: center; /* Center the text */
+  font-weight: bold; /* Make the text bold */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .day-content-wrapper {
+    flex-direction: column;
+  }
+
+  .day-image-container {
+    max-width: 100%;
+  }
+
+  .day-image {
+    height: 200px;
+  }
+
+  .cover-image-section {
+    height: 50vh;
+  }
+
+  .package-title {
+    font-size: 48px;
+    color: #e0e0e0;
+  }
+}
