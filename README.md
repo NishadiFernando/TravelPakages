@@ -25,13 +25,6 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application for m
 | Tailwind CSS  | Express.js    | Mongoose  | React Router DOM  |
 | React Hooks   |               |           | Nodemon           |
 
----
-## 👤 Admin Features
-- Add, update, and delete travel packages  
-- Manage bookings and customer data  
-
-### 🖼️ Create Package Form
-![Create Package Form](images/create-package.png)
-
+![Description](images/create-package.png)
 
 
