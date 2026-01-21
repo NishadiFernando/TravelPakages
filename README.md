@@ -25,6 +25,7 @@ A full-stack MERN (MongoDB, Express.js, React.js, Node.js) web application for m
 | Tailwind CSS  | Express.js    | Mongoose  | React Router DOM  |
 | React Hooks   |               |           | Nodemon           |
 
-![Description](images/create-package.png)
+![Create-Package](backend/images/create-package.png)
+
 
 
